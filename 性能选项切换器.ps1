@@ -5,10 +5,10 @@ try {
 } catch {}
 
 $PowerPlanCatalog = @(
-    [PSCustomObject]@{ Name = "Ω⁄ƒ‹";      Guid = "a1841308-3541-4fab-bc81-f71556f20b4a" },
-    [PSCustomObject]@{ Name = "∆Ω∫‚";      Guid = "381b4222-f694-41f0-9685-ff5bb260df2e" },
-    [PSCustomObject]@{ Name = "∏ﬂ–‘ƒ‹";    Guid = "8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c" },
-    [PSCustomObject]@{ Name = "◊ø‘Ω–‘ƒ‹";  Guid = "e9a42b02-d5df-448d-aa00-03f14749eb61" }
+    [PSCustomObject]@{ Name = "ËäÇËÉΩ";      Guid = "a1841308-3541-4fab-bc81-f71556f20b4a" },
+    [PSCustomObject]@{ Name = "Âπ≥Ë°°";      Guid = "381b4222-f694-41f0-9685-ff5bb260df2e" },
+    [PSCustomObject]@{ Name = "È´òÊÄßËÉΩ";    Guid = "8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c" },
+    [PSCustomObject]@{ Name = "ÂçìË∂äÊÄßËÉΩ";  Guid = "e9a42b02-d5df-448d-aa00-03f14749eb61" }
 )
 
 function Test-Admin {
@@ -57,34 +57,34 @@ function Write-POSTHeader {
 }
 
 function Show-MainMenu {
-    $mainTitle = "POWER PLAN MANAGEMENT UTILITY µÁ‘¥º∆ªÆπ‹¿Ìπ§æﬂ"
+    $mainTitle = "POWER PLAN MANAGEMENT UTILITY ÁîµÊ∫êËÆ°ÂàíÁÆ°ÁêÜÂ∑•ÂÖ∑"
     Write-POSTHeader $mainTitle
     Write-POSTLine ""
-    Write-POSTLine "[1] Ω⁄ƒ‹"
-    Write-POSTLine "[2] ∆Ω∫‚"
-    Write-POSTLine "[3] ∏ﬂ–‘ƒ‹"
-    Write-POSTLine "[4] ◊ø‘Ω–‘ƒ‹"
-    Write-POSTLine "[5] πÿ”⁄"
-    Write-POSTLine "[0] ÕÀ≥ˆ≥Ã–Ú"
+    Write-POSTLine "[1] ËäÇËÉΩ"
+    Write-POSTLine "[2] Âπ≥Ë°°"
+    Write-POSTLine "[3] È´òÊÄßËÉΩ"
+    Write-POSTLine "[4] ÂçìË∂äÊÄßËÉΩ"
+    Write-POSTLine "[5] ÂÖ≥‰∫é"
+    Write-POSTLine "[0] ÈÄÄÂá∫Á®ãÂ∫è"
     Write-POSTLine ""
     Write-POSTLine "--------------------------------------------------------------------" -Color Gray
-    Write-Host ">> «Î ‰»Îƒø±Í—°œÓ±‡∫≈..." -ForegroundColor Yellow
+    Write-Host ">> ËØ∑ËæìÂÖ•ÁõÆÊ†áÈÄâÈ°πÁºñÂè∑..." -ForegroundColor Yellow
     Write-Host ">> " -ForegroundColor Yellow -NoNewline
 }
 
 function Show-AboutPage {
-    Write-POSTHeader "ABOUT πÿ”⁄±æ≥Ã–Ú"
+    Write-POSTHeader "ABOUT ÂÖ≥‰∫éÊú¨Á®ãÂ∫è"
     Write-POSTLine ""
 
     $art = @(
         "",
-        "®Ä®Ä®Ä®Ä®Ä®Ä®Ä®Ä   ®Ä®Ä®Ä®Ä®Ä®Ä®Ä®Ä   ®Ä®Ä®Ä®Ä®Ä®Ä®Ä®Ä   ®Ä®Ä®Ä®Ä ®Ä®Ä®Ä®Ä®Ä   ®Ä®Ä®Ä®Ä  ®Ä®Ä®Ä®Ä",
-        "®Ä®Ä   ®Ä®Ä    ®Ä®Ä   ®Ä®Ä    ®Ä®Ä   ®Ä®Ä     ®Ä®Ä   ®Ä®Ä      ®Ä®Ä    ®Ä®Ä",
-        "    ®Ä®Ä         ®Ä®Ä         ®Ä®Ä      ®Ä®Ä  ®Ä®Ä        ®Ä®Ä  ®Ä®Ä",
-        "   ®Ä®Ä         ®Ä®Ä         ®Ä®Ä       ®Ä®Ä®Ä®Ä®Ä          ®Ä®Ä®Ä®Ä",
-        "  ®Ä®Ä         ®Ä®Ä         ®Ä®Ä        ®Ä®Ä  ®Ä®Ä          ®Ä®Ä",
-	" ®Ä®Ä   ®Ä®Ä    ®Ä®Ä   ®Ä®Ä    ®Ä®Ä   ®Ä®Ä    ®Ä®Ä   ®Ä®Ä         ®Ä®Ä",
-        "®Ä®Ä®Ä®Ä®Ä®Ä®Ä®Ä   ®Ä®Ä®Ä®Ä®Ä®Ä®Ä®Ä   ®Ä®Ä®Ä®Ä®Ä®Ä®Ä®Ä   ®Ä®Ä®Ä®Ä ®Ä®Ä®Ä®Ä®Ä      ®Ä®Ä®Ä®Ä",
+        "‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà   ‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà   ‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà   ‚ñà‚ñà‚ñà‚ñà ‚ñà‚ñà‚ñà‚ñà‚ñà   ‚ñà‚ñà‚ñà‚ñà  ‚ñà‚ñà‚ñà‚ñà",
+        "‚ñà‚ñà   ‚ñà‚ñà    ‚ñà‚ñà   ‚ñà‚ñà    ‚ñà‚ñà   ‚ñà‚ñà     ‚ñà‚ñà   ‚ñà‚ñà      ‚ñà‚ñà    ‚ñà‚ñà",
+        "    ‚ñà‚ñà         ‚ñà‚ñà         ‚ñà‚ñà      ‚ñà‚ñà  ‚ñà‚ñà        ‚ñà‚ñà  ‚ñà‚ñà",
+        "   ‚ñà‚ñà         ‚ñà‚ñà         ‚ñà‚ñà       ‚ñà‚ñà‚ñà‚ñà‚ñà          ‚ñà‚ñà‚ñà‚ñà",
+        "  ‚ñà‚ñà         ‚ñà‚ñà         ‚ñà‚ñà        ‚ñà‚ñà  ‚ñà‚ñà          ‚ñà‚ñà",
+	    " ‚ñà‚ñà   ‚ñà‚ñà    ‚ñà‚ñà   ‚ñà‚ñà    ‚ñà‚ñà   ‚ñà‚ñà    ‚ñà‚ñà   ‚ñà‚ñà         ‚ñà‚ñà",
+        "‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà   ‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà   ‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà‚ñà   ‚ñà‚ñà‚ñà‚ñà ‚ñà‚ñà‚ñà‚ñà‚ñà      ‚ñà‚ñà‚ñà‚ñà",
         ""
     )
 
@@ -115,7 +115,7 @@ function Show-AboutPage {
     Write-POSTLine "        @Zzzky 2026 ;D <3 :D" -Color Yellow
     Write-POSTLine "        @Build:2026/11/9 2:13" -Color Yellow
     Write-POSTLine ""
-    Write-POSTLine "        ºÚ“◊WindowsµÁ‘¥∑Ω∞∏«–ªªøÿ÷∆Ã®π§æﬂ" -Color Gray
+    Write-POSTLine "        ÁÆÄÊòìWindowsÁîµÊ∫êÊñπÊ°àÂàáÊç¢ÊéßÂà∂Âè∞Â∑•ÂÖ∑" -Color Gray
     Write-POSTLine ""
 
     $color16 = @(
@@ -138,20 +138,20 @@ function Show-AboutPage {
     )
     Write-Host "        " -NoNewline
     for ($x = 0; $x -lt 8; $x++) {
-        Write-Host "®Ä®Ä®Ä®Ä" -ForegroundColor $color16[$x] -NoNewline
+        Write-Host "‚ñà‚ñà‚ñà‚ñà" -ForegroundColor $color16[$x] -NoNewline
         Start-Sleep -Milliseconds 0
     }
     Write-Host ""
     Write-Host "        " -NoNewline
     for ($x = 8; $x -lt 16; $x++) {
-        Write-Host "®Ä®Ä®Ä®Ä" -ForegroundColor $color16[$x] -NoNewline
+        Write-Host "‚ñà‚ñà‚ñà‚ñà" -ForegroundColor $color16[$x] -NoNewline
         Start-Sleep -Milliseconds 0
     }
     Write-Host ""
 
     Write-POSTLine ""
     Write-POSTLine "--------------------------------------------------------------------"
-    Write-Host ">> ∞¥ªÿ≥µº¸∑µªÿ÷˜≤Àµ•..." -ForegroundColor Yellow
+    Write-Host ">> ÊåâÂõûËΩ¶ÈîÆËøîÂõû‰∏ªËèúÂçï..." -ForegroundColor Yellow
     Write-Host ">> " -ForegroundColor Yellow -NoNewline
     $null = Read-Host
 }
@@ -160,43 +160,43 @@ function Invoke-PlanSwitchWorkflow {
     param([PSCustomObject]$Target)
     Write-POSTHeader "POWER PLAN SWITCH WORKFLOW"
     Write-POSTLine ""
-    Write-POSTLine "  ƒø±ÍµÁ‘¥º∆ªÆ: $($Target.Name)" -Color White
-    Write-POSTLine "  ƒø±Í GUID:     $($Target.Guid)" -Color White
+    Write-POSTLine "  ÁõÆÊ†áÁîµÊ∫êËÆ°Âàí: $($Target.Name)" -Color White
+    Write-POSTLine "  ÁõÆÊ†á GUID:     $($Target.Guid)" -Color White
     Write-POSTLine ""
     Write-POSTLine "--------------------------------------------------------------------"
-    Write-POSTLine "  [STEP 1/4]  µ˜”√ powercfg /GETACTIVESCHEME ∂¡»°µ±«∞º§ªÓ∑Ω∞∏..." -Color White
+    Write-POSTLine "  [STEP 1/4]  Ë∞ÉÁî® powercfg /GETACTIVESCHEME ËØªÂèñÂΩìÂâçÊøÄÊ¥ªÊñπÊ°à..." -Color White
     $null = powercfg /GETACTIVESCHEME 2>&1
-    Write-POSTLine "  >> ≤Ÿ◊˜ÕÍ≥…£¨“—∂¡»°µ±«∞œµÕ≥µÁ‘¥≈‰÷√" -Color Green
+    Write-POSTLine "  >> Êìç‰ΩúÂÆåÊàêÔºåÂ∑≤ËØªÂèñÂΩìÂâçÁ≥ªÁªüÁîµÊ∫êÈÖçÁΩÆ" -Color Green
     Write-POSTLine ""
-    Write-POSTLine "  [STEP 2/4]  µ˜”√ powercfg /S $($Target.Guid) ÷¥––«–ªª..." -Color White
+    Write-POSTLine "  [STEP 2/4]  Ë∞ÉÁî® powercfg /S $($Target.Guid) ÊâßË°åÂàáÊç¢..." -Color White
     powercfg /S $Target.Guid 2>&1 | Out-Null
     Write-POSTLine ""
-    Write-POSTLine "  [STEP 3/4]  µ˜”√ powercfg /GETACTIVESCHEME —È÷§«–ªªΩ·π˚..." -Color White
+    Write-POSTLine "  [STEP 3/4]  Ë∞ÉÁî® powercfg /GETACTIVESCHEME È™åËØÅÂàáÊç¢ÁªìÊûú..." -Color White
     $verify = powercfg /GETACTIVESCHEME 2>&1
     if ($verify -match [regex]::Escape($Target.Name)) {
-        Write-POSTLine "  >> —È÷§Õ®π˝£∫ƒø±ÍµÁ‘¥º∆ªÆ“—≥…π¶º§ªÓ" -Color Green
+        Write-POSTLine "  >> È™åËØÅÈÄöËøáÔºöÁõÆÊ†áÁîµÊ∫êËÆ°ÂàíÂ∑≤ÊàêÂäüÊøÄÊ¥ª" -Color Green
         Write-POSTLine ""
-        Write-POSTLine "  [RESULT] ≤Ÿ◊˜≥…π¶£∫œµÕ≥µÁ‘¥≈‰÷√“—«–ªª÷¡°æ$($Target.Name)°ø" -Color Green
+        Write-POSTLine "  [RESULT] Êìç‰ΩúÊàêÂäüÔºöÁ≥ªÁªüÁîµÊ∫êÈÖçÁΩÆÂ∑≤ÂàáÊç¢Ëá≥„Äê$($Target.Name)„Äë" -Color Green
     } else {
-        Write-POSTLine "  >> —È÷§ ß∞‹£∫ƒø±ÍµÁ‘¥º∆ªÆŒ¥¥¶”⁄º§ªÓ◊¥Ã¨" -Color Yellow
-        Write-POSTLine "  >> ø…ƒ‹‘≠“Ú£∫∏√∑Ω∞∏‘⁄œµÕ≥÷–≤ª¥Ê‘⁄ªÚ“—±ª…æ≥˝" -Color Yellow
+        Write-POSTLine "  >> È™åËØÅÂ§±Ë¥•ÔºöÁõÆÊ†áÁîµÊ∫êËÆ°ÂàíÊú™Â§Ñ‰∫éÊøÄÊ¥ªÁä∂ÊÄÅ" -Color Yellow
+        Write-POSTLine "  >> ÂèØËÉΩÂéüÂõ†ÔºöËØ•ÊñπÊ°àÂú®Á≥ªÁªü‰∏≠‰∏çÂ≠òÂú®ÊàñÂ∑≤Ë¢´Âà†Èô§" -Color Yellow
         Write-POSTLine ""
-        Write-POSTLine "  [STEP 4/4]  µ˜”√ powercfg /DUPLICATESCHEME $($Target.Guid) ÷ÿΩ®∑Ω∞∏..." -Color White
+        Write-POSTLine "  [STEP 4/4]  Ë∞ÉÁî® powercfg /DUPLICATESCHEME $($Target.Guid) ÈáçÂª∫ÊñπÊ°à..." -Color White
         powercfg -duplicatescheme $Target.Guid 2>&1 | Out-Null
-        Write-POSTLine "  >> ÷ÿΩ®ÕÍ≥…£¨‘Ÿ¥Œµ˜”√ powercfg /S $($Target.Guid) º§ªÓ∑Ω∞∏..." -Color White
+        Write-POSTLine "  >> ÈáçÂª∫ÂÆåÊàêÔºåÂÜçÊ¨°Ë∞ÉÁî® powercfg /S $($Target.Guid) ÊøÄÊ¥ªÊñπÊ°à..." -Color White
         powercfg /S $Target.Guid 2>&1 | Out-Null
-        Write-POSTLine "  >> ’˝‘⁄÷¥––∂˛¥Œ—È÷§..." -Color White
+        Write-POSTLine "  >> Ê≠£Âú®ÊâßË°å‰∫åÊ¨°È™åËØÅ..." -Color White
         $final = powercfg /GETACTIVESCHEME 2>&1
         if ($final -match [regex]::Escape($Target.Name)) {
-            Write-POSTLine "  [RESULT] ≤Ÿ◊˜≥…π¶£∫»± ß∑Ω∞∏“—÷ÿΩ®≤¢º§ªÓ°æ$($Target.Name)°ø" -Color Green
+            Write-POSTLine "  [RESULT] Êìç‰ΩúÊàêÂäüÔºöÁº∫Â§±ÊñπÊ°àÂ∑≤ÈáçÂª∫Âπ∂ÊøÄÊ¥ª„Äê$($Target.Name)„Äë" -Color Green
         } else {
-            Write-POSTLine "  [RESULT] ≤Ÿ◊˜ ß∞‹£∫Œﬁ∑®¥¥Ω®ªÚº§ªÓƒø±ÍµÁ‘¥∑Ω∞∏" -Color Red
-            Write-POSTLine "  >> Ω®“ÈºÏ≤Èπ‹¿Ì‘±»®œﬁ°¢œµÕ≥ÕÍ’˚–‘º∞ powercfg ø…”√–‘" -Color Gray
+            Write-POSTLine "  [RESULT] Êìç‰ΩúÂ§±Ë¥•ÔºöÊó†Ê≥ïÂàõÂª∫ÊàñÊøÄÊ¥ªÁõÆÊ†áÁîµÊ∫êÊñπÊ°à" -Color Red
+            Write-POSTLine "  >> Âª∫ËÆÆÊ£ÄÊü•ÁÆ°ÁêÜÂëòÊùÉÈôê„ÄÅÁ≥ªÁªüÂÆåÊï¥ÊÄßÂèä powercfg ÂèØÁî®ÊÄß" -Color Gray
         }
     }
     Write-POSTLine ""
     Write-POSTLine "--------------------------------------------------------------------"
-    Write-Host ">> ∞¥ªÿ≥µº¸∑µªÿ÷˜≤Àµ•..." -ForegroundColor Yellow
+    Write-Host ">> ÊåâÂõûËΩ¶ÈîÆËøîÂõû‰∏ªËèúÂçï..." -ForegroundColor Yellow
     Write-Host ">> " -ForegroundColor Yellow -NoNewline
     $null = Read-Host
 }
@@ -205,11 +205,11 @@ function Show-ErrorScreen {
     param([string]$Title, [string]$Detail, [string]$Received = "")
     Write-POSTHeader $Title
     Write-POSTLine ""
-    Write-POSTLine "  ¥ÌŒÛœÍ«È: $Detail" -Color Red
-    if ($Received) { Write-POSTLine "   ’µΩ ‰»Î: $Received" -Color Red }
+    Write-POSTLine "  ÈîôËØØËØ¶ÊÉÖ: $Detail" -Color Red
+    if ($Received) { Write-POSTLine "  Êî∂Âà∞ËæìÂÖ•: $Received" -Color Red }
     Write-POSTLine ""
     Write-POSTLine "--------------------------------------------------------------------"
-    Write-Host ">> ∞¥ªÿ≥µº¸∑µªÿ÷˜≤Àµ•..." -ForegroundColor Yellow
+    Write-Host ">> ÊåâÂõûËΩ¶ÈîÆËøîÂõû‰∏ªËèúÂçï..." -ForegroundColor Yellow
     Write-Host ">> " -ForegroundColor Yellow -NoNewline
     $null = Read-Host
 }
@@ -218,15 +218,15 @@ if (-not (Test-Admin)) {
     Clear-Host
     $bar = "===================================================================="
     Write-POSTLine $bar -Color Yellow
-    $title = "PRIVILEGE REQUIREMENT NOTICE »®œﬁÃ· æ"
+    $title = "PRIVILEGE REQUIREMENT NOTICE ÊùÉÈôêÊèêÁ§∫"
     Write-SingleLineTitle -Bar $bar -TitleText $title -Color Yellow
     Write-POSTLine $bar -Color Yellow
     Write-POSTLine ""
-    Write-POSTLine "  µ±«∞Ω¯≥ÃŒ¥≥÷”–π‹¿Ì‘±»®œﬁ°£"
-    Write-POSTLine "  µÁ‘¥≈‰÷√–ﬁ∏ƒ–Ë“™π‹¿Ì‘±»®œﬁ°£"
+    Write-POSTLine "  ÂΩìÂâçËøõÁ®ãÊú™ÊåÅÊúâÁÆ°ÁêÜÂëòÊùÉÈôê„ÄÇ"
+    Write-POSTLine "  ÁîµÊ∫êÈÖçÁΩÆ‰øÆÊîπÈúÄË¶ÅÁÆ°ÁêÜÂëòÊùÉÈôê„ÄÇ"
     Write-POSTLine ""
-    Write-POSTLine "  ≥Ã–ÚΩ´‘⁄ 3 √Î∫Û∑¢∆ UAC »®œﬁÃ·…˝«Î«Û..." -Color Yellow
-    Write-POSTLine "  »Á–Ë»°œ˚£¨«Î÷±Ω”πÿ±’¥∞ø⁄°£"
+    Write-POSTLine "  Á®ãÂ∫èÂ∞ÜÂú® 3 ÁßíÂêéÂèëËµ∑ UAC ÊùÉÈôêÊèêÂçáËØ∑Ê±Ç..." -Color Yellow
+    Write-POSTLine "  Â¶ÇÈúÄÂèñÊ∂àÔºåËØ∑Áõ¥Êé•ÂÖ≥Èó≠Á™óÂè£„ÄÇ"
     Write-POSTLine ""
     Write-POSTLine $bar -Color Yellow
     Start-Sleep -Seconds 3
@@ -235,9 +235,9 @@ if (-not (Test-Admin)) {
         Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File `"$scriptPath`"" -Verb RunAs
     } catch {
         Clear-Host
-        Write-POSTLine "[ERROR] Œﬁ∑®∆Ù∂ØÃ·…˝»®œﬁΩ¯≥Ã°£" -Color Red
-        Write-POSTLine "«Î ÷∂Ø“‘π‹¿Ì‘±…Ì∑›‘À––¥ÀΩ≈±æ°£"
-        Write-Host ">> ∞¥ªÿ≥µº¸ÕÀ≥ˆ..." -ForegroundColor Yellow
+        Write-POSTLine "[ERROR] Êó†Ê≥ïÂêØÂä®ÊèêÂçáÊùÉÈôêËøõÁ®ã„ÄÇ" -Color Red
+        Write-POSTLine "ËØ∑ÊâãÂä®‰ª•ÁÆ°ÁêÜÂëòË∫´‰ªΩËøêË°åÊ≠§ËÑöÊú¨„ÄÇ"
+        Write-Host ">> ÊåâÂõûËΩ¶ÈîÆÈÄÄÂá∫..." -ForegroundColor Yellow
         Write-Host ">> " -ForegroundColor Yellow -NoNewline
         $null = Read-Host
         exit 1
@@ -249,16 +249,16 @@ while ($true) {
     Show-MainMenu
     $raw = Read-Host
     if ([string]::IsNullOrWhiteSpace($raw)) {
-        Show-ErrorScreen " ‰»Î–£—È ß∞‹" " ‰»Îƒ⁄»›Œ™ø’£¨«Î ‰»Î”––ßµƒ ˝◊÷±‡∫≈"
+        Show-ErrorScreen "ËæìÂÖ•Ê†°È™åÂ§±Ë¥•" "ËæìÂÖ•ÂÜÖÂÆπ‰∏∫Á©∫ÔºåËØ∑ËæìÂÖ•ÊúâÊïàÁöÑÊï∞Â≠óÁºñÂè∑"
         continue
     }
     switch ($raw) {
         "0" {
-            Write-POSTHeader "PROGRAM TERMINATION ≥Ã–ÚÕÀ≥ˆ"
+            Write-POSTHeader "PROGRAM TERMINATION Á®ãÂ∫èÈÄÄÂá∫"
             Write-POSTLine ""
-            Write-POSTLine "  µÁ‘¥π‹¿Ìπ§æﬂª·ª∞Ω· ¯°£" -Color Green
+            Write-POSTLine "  ÁîµÊ∫êÁÆ°ÁêÜÂ∑•ÂÖ∑‰ºöËØùÁªìÊùü„ÄÇ" -Color Green
             Write-POSTLine ""
-            Write-Host ">> ∞¥ªÿ≥µº¸πÿ±’¥∞ø⁄..." -ForegroundColor Yellow
+            Write-Host ">> ÊåâÂõûËΩ¶ÈîÆÂÖ≥Èó≠Á™óÂè£..." -ForegroundColor Yellow
             Write-Host ">> " -ForegroundColor Yellow -NoNewline
             $null = Read-Host
             break
@@ -268,7 +268,7 @@ while ($true) {
         "3" { Invoke-PlanSwitchWorkflow $PowerPlanCatalog[2] }
         "4" { Invoke-PlanSwitchWorkflow $PowerPlanCatalog[3] }
         "5" { Show-AboutPage }
-        default { Show-ErrorScreen " ‰»Î–£—È ß∞‹" " ‰»Î±‡∫≈≥¨≥ˆø…—°∑∂Œß" $raw }
+        default { Show-ErrorScreen "ËæìÂÖ•Ê†°È™åÂ§±Ë¥•" "ËæìÂÖ•ÁºñÂè∑Ë∂ÖÂá∫ÂèØÈÄâËåÉÂõ¥" $raw }
     }
     if ($raw -eq "0") { break }
 }
